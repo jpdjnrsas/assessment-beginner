@@ -1,4 +1,8 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
+<?php
 include "../db.php";
 $result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id DESC");
 ?>
